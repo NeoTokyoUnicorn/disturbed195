@@ -1,0 +1,42 @@
+start:
+  - show leila_house: WITH FADE CONTINUE
+  - show leila: normal AT LEFT WITH FADE
+  - leila says: Hello, welcome to my deep dream
+  - wait: 300
+  - leila says normal: This the house in which I grew up. Do you want to visit it?
+  - choice:
+    - "Yes!":
+      - leila says normal: Thats great! Go ahead!
+      - scene: leilaBedroom
+    - "Not yet!":
+      - leila says: Well, Ill be here when you are ready!
+      - scene: endGame
+      
+leilaBedroom:
+  - show leila_bedroom: WITH FADE CONTINUE
+  - show leila: sad AT RIGHT WITH FADE
+  - leila says: This is the room in which I grow up. Being here always brings me so many memories, both happy and sad.
+  - show leila: sad AT LEFT
+  - leila says: Here is where I spend most of my time studying or relaxing listening to music. I like very much studying, most of all philosophy and history. I could spend hours reading books. Do you like school, too?
+  - choice:
+    - "Yes!":
+      - leila says sad: Really? Or you just answered like that to avoid arguing with me? Because your face made a strange expression when I asked you about school.
+      - leila says normal: You cna talk freely to me. We are friends since so much time now.
+      - scene: endGame
+    - "No, not really":
+      - leila says sad: I knew it. I heard a lot of rumors about your lack of attenction. One of the teacher is a closer freind of my mother, and once she told her that you struggle to keep concentrated and seem so relieved when the hour of lesson ends.
+      - leila says normal: Do you want to know a secret?      
+      - choice:
+        - "A secret? I can't resist.":
+          - leila says: I know the entrance to an abandoned house crawled with ghosts Do you want to visit it?
+          - scene: endGame
+        - "No, secret scares me":
+          - leila says: Well, Ill be here when you are ready!
+          - scene: endGame
+
+endGame:
+  - leila says normal: Quickstart over!
+  - effect ROLLINGCREDITS:
+    endGame: true
+    text:
+      - the Disturbed
