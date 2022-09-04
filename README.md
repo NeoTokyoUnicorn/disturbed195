@@ -29,3 +29,5 @@ GAN is a Machine Learning process in which two newtork compete to distinguish th
 provided at every learning step. Increasing the numbers of learning steps requires a more powerful hardware 
 to run the script, and this higher computational performance can be accessed by burning the token aquired 
 by completing significative quests in game.
+
+https://www.disturbed195.it
